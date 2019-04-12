@@ -1,0 +1,20 @@
+{
+  "produtos": [
+    {
+      "ativo": true,
+      "nome": "Opa",
+      "descricao": "Vai",
+      "quant": 111,
+      "valor": 10,
+      "id": 1
+    },
+    {
+      "ativo": true,
+      "nome": "coca cola",
+      "descricao": "muito bom",
+      "quant": 150,
+      "valor": 9,
+      "id": 2
+    }
+  ]
+}

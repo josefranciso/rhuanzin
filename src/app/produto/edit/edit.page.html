@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Atualização de Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #fc="ngForm" (ngSubmit)="formDados(fc)">
+    <!-- Inputs with labels -->
+    <ion-item>
+      <ion-label position="floating">Nome do Produto</ion-label>
+      <ion-input [(ngModel)]="produto.nome" name="nome" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Descrição</ion-label>
+      <ion-input [(ngModel)]="produto.descricao" name="descricao" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Quantidade</ion-label>
+      <ion-input [(ngModel)]="produto.quant" type="number" name="quant" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Valor</ion-label>
+      <ion-input [(ngModel)]="produto.valor" type="number" name="valor" required></ion-input>
+    </ion-item>
+
+    <ion-row padding-top>
+      <ion-button type="submit" [disabled]="!fc.valid">Salvar </ion-button>
+      <ion-button type="reset">Limpar </ion-button>
+    </ion-row>
+  </form>
+</ion-content>
